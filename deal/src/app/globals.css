@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+.btn-blue{
+    background-color: #288CD5;
+    color: white;
+    cursor: pointer;
+}
+.brand-section #tsparticles,
+.other-sections #tsparticles {
+  display: none!important;
+}
+.hero-section #tsparticles {
+    display: block;
+  }
+
+  .grow-bg{
+    background-image: url('/Group 2223.png');
+  }
