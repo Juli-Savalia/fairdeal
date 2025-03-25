@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
+@import "animate.css";
+@import "aos/dist/aos.css";
 
+body{
+  font-family: "Inter", sans-serif;
+}
 .btn-blue{
     background-color: #288CD5;
     color: white;
@@ -15,4 +21,8 @@
 
   .grow-bg{
     background-image: url('/Group 2223.png');
+  }
+  @media (min-width: 1366px) {
+    .custom-top {
+padding: 64px 0!important ;    }
   }

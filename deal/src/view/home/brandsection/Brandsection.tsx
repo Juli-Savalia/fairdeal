@@ -16,19 +16,21 @@ import logo8 from "@/assets/images/8.png";
 import logo9 from "@/assets/images/9.png";
 import logo10 from "@/assets/images/10.png";
 import logo11 from "@/assets/images/11.png";
+import logo12 from "@/assets/images/6492b66224f87f9592593227_CD_Logo 1.png";
 import right from "@/assets/images/right overlay.png";
 import left from "@/assets/images/left overlay.png";
 
 const brandLogos = [
-  logo1, logo2, logo3, logo4, logo5, logo6, 
-  logo7, logo8, logo9, logo10, logo11
+  logo2, logo11, logo10, logo9, logo8, logo1, 
+  logo3, logo4, logo5, logo6, logo7,logo12
 ];
 
 const BrandSection = () => {
   return (
     <section className="py-16 bg-white ">
       <div className="container mx-auto px-6 relative">
-        <Image src={right} alt="right" className="absolute right-0"></Image>
+        <Image src={right} alt="right" className="absolute right-0 z-10"></Image>
+        <Image src={left} alt="left" className="absolute left-0 z-10"></Image>
         {/* Swiper  */}
         <div className="block md:hidden">
           <Swiper
@@ -42,7 +44,7 @@ const BrandSection = () => {
                 <Image 
                   src={logo} 
                   alt={`Brand ${index + 1}`}  
-                  className="w-[90px] sm:w-[110px] object-contain grayscale hover:grayscale-0 transition-all duration-300" 
+                  className="w-[90px] sm:w-[110px] h-[53px] object-contain grayscale hover:grayscale-0 transition-all duration-300" 
                 />
               </SwiperSlide>
             ))}

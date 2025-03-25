@@ -7,6 +7,7 @@ import { ArrowRight } from 'lucide-react';
 import e1 from "../../../assets/images/1 (1).png";
 import e2 from "../../../assets/images/1 (2).png";
 import e3 from "../../../assets/images/1 (3).png";
+import Link from "next/link";
 const Working = () => {
   const faq = [
     {
@@ -26,12 +27,12 @@ const Working = () => {
     <section className="pt-[84px] pb-[151px] relative overflow-hidden bg-gray-50">
       <Image src={e3} alt="e1" className="absolute top-0 -z-10"></Image>
       <div className="container mx-auto">
-        <h2 className="text-[44px] font-bold text-center">How its work?</h2>
+        <h2 className="text-[44px] font-bold text-center">How its  <span className='z-20 relative after:absolute after:content-[""] after:bg-[#288cd54a] after:w-full after:h-[20px] after:rounded-[30px] after:top-[30px] after:left-0 after:-z-10'>Works?</span> </h2>
         <div className="flex flex-wrap items-center pt-24 justify-around">
           <div className="w-[60%]">
             <div className="p-6 rounded-[20px] bg-[#20222F] z-20 w-[601px]">
               <h2 className="flex justify-between items-center">
-                <span className="text-red-600 px-4 py-1.5 border-2 border-red-600 rounded-[30px]">
+                <span className="text-[#F76B0080] px-4 py-1.5 border-2 border-[#F76B0080] rounded-[30px]">
                   Step 1
                 </span>
                 <ArrowDown className="text-white" />
